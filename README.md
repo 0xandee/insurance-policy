@@ -1,10 +1,5 @@
 # Insurance Policy
 
-## Introduction
-
-This is a placeholder for the project's introduction. Please provide a brief description of what this project does and
-its main features.
-
 ## Smart Contracts
 
 1. **TravelInsurancePolicyUUPS.sol** - A brief description of the `TravelInsurancePolicyUUPS` smart contract.
