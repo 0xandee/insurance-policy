@@ -2,13 +2,13 @@ import { ethers, upgrades } from "hardhat";
 
 async function main() {
     // Get the Contract Factory
-    const TravelInsurancePolicy = await ethers.getContractFactory("TravelInsurancePolicyTransparent");
+    const insuranceContract = await ethers.getContractFactory("InsuranceTransparent");
 
     // Deploy the contract proxy
-    const travelInsurancePolicy = await upgrades.deployProxy(TravelInsurancePolicy, [], { initializer: 'initialize' });
-    await travelInsurancePolicy.waitForDeployment();
+    const insuranceContractProxy = await upgrades.deployProxy(insuranceContract, [], { initializer: 'initialize' });
+    await insuranceContractProxy.waitForDeployment();
 
-    console.log("TravelInsurancePolicy deployed to:", travelInsurancePolicy.target);
+    console.log("InsuranceTransparent deployed to:", insuranceContractProxy.target);
 }
 
 main()

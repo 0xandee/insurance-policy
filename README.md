@@ -1,15 +1,23 @@
-# Insurance Policy
+# Insurance Contracts
 
 ## Smart Contracts
 
-1. **TravelInsurancePolicyUUPS.sol** - A brief description of the `TravelInsurancePolicyUUPS` smart contract.
-2. **TravelInsurancePolicyTransparent.sol** - A brief description of the `TravelInsurancePolicyTransparent` smart
-   contract.
+1. **InsuranceUUPS.sol** - A brief description of the `InsuranceUUPS` smart contract.
+2. **InsuranceTransparent.sol** - A brief description of the `InsuranceTransparent` smart contract.
 
 ## Scripts
 
-1. **deployUUPS.ts** - Script to deploy the `TravelInsurancePolicyUUPS` smart contract.
-2. **deployTransparent.ts** - Script to deploy the `TravelInsurancePolicyTransparent` smart contract.
+1. **deployUUPS.ts** - Script to deploy the `InsuranceUUPS` smart contract.
+
+```
+npx hardhat run scripts/deployUUPS.ts
+```
+
+2. **deployTransparent.ts** - Script to deploy the `InsuranceTransparent` smart contract.
+
+```
+npx hardhat run scripts/deployTransparent.ts
+```
 
 ## Installation and Setup
 

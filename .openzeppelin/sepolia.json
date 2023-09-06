@@ -1,0 +1,155 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [],
+  "impls": {
+    "474540fede3a7d8b14923335c89ddb48349984de6a1801aed1c0cb50d4815fc0": {
+      "address": "0x281DD834AE19c177EcA4abBAf7E2863e9eaBEDBA",
+      "txHash": "0xea99ec20dcc34ed7384d59579e8a38c2fe05f4b218c56453dbd61fd804774abf",
+      "layout": {
+        "solcVersion": "0.8.19",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "policyStatus",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_enum(PolicyStatus)1295",
+            "contract": "InsuranceTransparent",
+            "src": "contracts/InsuranceTransparent.sol:32"
+          },
+          {
+            "label": "poolFund",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_uint256",
+            "contract": "InsuranceTransparent",
+            "src": "contracts/InsuranceTransparent.sol:33"
+          },
+          {
+            "label": "policyInfoList",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(PolicyInfo)1304_storage)",
+            "contract": "InsuranceTransparent",
+            "src": "contracts/InsuranceTransparent.sol:34"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_enum(PolicyStatus)1295": {
+            "label": "enum InsuranceTransparent.PolicyStatus",
+            "members": [
+              "Active",
+              "Expired"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(PolicyInfo)1304_storage)": {
+            "label": "mapping(string => struct InsuranceTransparent.PolicyInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(PolicyInfo)1304_storage": {
+            "label": "struct InsuranceTransparent.PolicyInfo",
+            "members": [
+              {
+                "label": "policyEffectiveDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "policyExpirationDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "typeOfTraveller",
+                "type": "t_uint8",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "cost",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          },
+          "t_string_storage": {
+            "label": "string"
+          }
+        }
+      }
+    }
+  }
+}
